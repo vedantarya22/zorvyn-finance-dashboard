@@ -1,0 +1,172 @@
+.register__page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f5;
+}
+
+.register__card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ── Logo ── */
+.register__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.register__logo-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1D9E75;
+  flex-shrink: 0;
+}
+
+/* ── Header text ── */
+.register__header {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: -4px;
+}
+
+.register__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+.register__subtitle {
+  font-size: 13px;
+  color: #888;
+}
+
+/* ── Error banner ── */
+.register__error {
+  background: #FCEBEB;
+  color: #A32D2D;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+/* ── Form ── */
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.register__field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.register__label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+}
+
+.register__input {
+  height: 38px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+
+.register__input:focus {
+  border-color: #1D9E75;
+}
+
+.register__input--error {
+  border-color: #E24B4A;
+}
+
+.register__input--error:focus {
+  border-color: #E24B4A;
+}
+
+.register__field-error {
+  font-size: 11px;
+  color: #A32D2D;
+  margin-top: 2px;
+}
+
+/* ── Submit button ── */
+.register__btn {
+  height: 40px;
+  background: #1D9E75;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4px;
+  transition: background 0.15s;
+}
+
+.register__btn:hover {
+  background: #178a65;
+}
+
+.register__btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ── Footer links ── */
+.register__hint {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+.register__hint a {
+  color: #1D9E75;
+  font-weight: 500;
+}
+
+/* ── Info note ── */
+.register__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: #f0faf6;
+  border: 1px solid #c8eadd;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.register__note-icon {
+  color: #1D9E75;
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.register__note strong {
+  color: #111;
+}

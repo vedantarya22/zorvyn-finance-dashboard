@@ -1,0 +1,134 @@
+.dashboard__page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard__loading {
+  text-align: center;
+  padding-top: 80px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ── Stat cards ── */
+.dashboard__stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.stat-card__label {
+  font-size: 11px;
+  color: #999;
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.stat-card__value {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.stat-card__value--green  { color: #0F6E56; }
+.stat-card__value--red    { color: #A32D2D; }
+.stat-card__value--neutral { color: #111; }
+
+/* ── Charts ── */
+.dashboard__charts-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.dashboard__chart-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.dashboard__chart-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 14px;
+}
+
+/* ── Recent transactions table ── */
+.dashboard__table-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.dashboard__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard__th {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dashboard__tr {
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.dashboard__tr:last-child {
+  border-bottom: none;
+}
+
+.dashboard__td {
+  font-size: 13px;
+  color: #333;
+  padding: 11px 0;
+}
+
+.dashboard__td--muted { color: #aaa; }
+.dashboard__td--date  { color: #888; }
+.dashboard__td--green { color: #0F6E56; font-weight: 600; }
+.dashboard__td--red   { color: #A32D2D; font-weight: 600; }
+
+.dashboard__note {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.type-pill {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.type-pill--income  { background: #EAF3DE; color: #3B6D11; }
+.type-pill--expense { background: #FCEBEB; color: #A32D2D; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .dashboard__stat-row   { grid-template-columns: repeat(2, 1fr); }
+  .dashboard__charts-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .dashboard__stat-row { grid-template-columns: 1fr; }
+  .dashboard__page     { padding: 16px; }
+}

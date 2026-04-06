@@ -1,0 +1,214 @@
+.users__page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Header ── */
+.users__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.users__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.users__subtitle {
+  font-size: 13px;
+  color: #888;
+  margin-top: 3px;
+}
+
+.users__error {
+  background: #FCEBEB;
+  color: #A32D2D;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+/* ── Table ── */
+.users__table-wrap {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.users__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users__th {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 500;
+  text-align: left;
+  padding: 12px 16px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.users__tr {
+  border-bottom: 1px solid #f5f5f5;
+  transition: background 0.1s;
+}
+
+.users__tr:last-child {
+  border-bottom: none;
+}
+
+.users__tr:hover {
+  background: #fafafa;
+}
+
+.users__td {
+  font-size: 13px;
+  color: #333;
+  padding: 12px 16px;
+  vertical-align: middle;
+}
+
+.users__td--muted {
+  color: #888;
+}
+
+.users__empty {
+  text-align: center;
+  padding: 40px;
+  color: #bbb;
+  font-size: 13px;
+}
+
+/* ── User cell ── */
+.users__user-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.users__avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #E1F5EE;
+  color: #0F6E56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.users__name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111;
+}
+
+.users__email {
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+/* ── Role pills ── */
+.users__role-pill {
+  font-size: 10px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.users__role-pill--admin {
+  background: #EAF3DE;
+  color: #3B6D11;
+}
+
+.users__role-pill--analyst {
+  background: #E6F1FB;
+  color: #185FA5;
+}
+
+.users__role-pill--viewer {
+  background: #F1EFE8;
+  color: #5F5E5A;
+}
+
+/* ── Status pills ── */
+.users__status-pill {
+  font-size: 10px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.users__status-pill--active {
+  background: #EAF3DE;
+  color: #3B6D11;
+}
+
+.users__status-pill--inactive {
+  background: #FCEBEB;
+  color: #A32D2D;
+}
+
+/* ── Role select dropdown ── */
+.users__select {
+  font-size: 12px;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  background: #fff;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.users__select:focus {
+  border-color: #1D9E75;
+}
+
+/* ── Toggle buttons ── */
+.users__toggle-btn {
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 7px;
+  border: 1px solid;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+
+.users__toggle-btn:hover {
+  opacity: 0.8;
+}
+
+.users__toggle-btn--deactivate {
+  background: #FCEBEB;
+  color: #A32D2D;
+  border-color: #f5c5c5;
+}
+
+.users__toggle-btn--activate {
+  background: #EAF3DE;
+  color: #3B6D11;
+  border-color: #c8eadd;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .users__page { padding: 16px; }
+
+  .users__th:nth-child(4),
+  .users__td:nth-child(4) { display: none; }
+}
