@@ -6,7 +6,7 @@ import {
 import Navbar from '../components/Navbar';
 import api from '../api/axios';
 import { useAuth } from '../context/AuthContext';
-import './Dashboard.css';
+import './DashBoard.css';
 
 const PIE_COLORS = ['#1D9E75', '#378ADD', '#BA7517', '#D4537E', '#7F77DD', '#E24B4A'];
 
